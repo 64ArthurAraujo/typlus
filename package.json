@@ -1,6 +1,6 @@
 {
   "name": "typlus",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Syntax sugar for typescript/javascript",
   "since": 2023,
   "main": "./index.js",
