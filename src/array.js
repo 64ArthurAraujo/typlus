@@ -17,6 +17,12 @@ function arrayPrototype() {
       };
   }
 
+  if(!Array.prototype.isNotEmpty) {
+    Array.prototype.isNotEmpty = function () {
+        return this.length > 0;
+    };
+}
+
   if(!Array.prototype.removeFirst) {
       Array.prototype.removeFirst = function () {
           this.shift();

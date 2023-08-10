@@ -6,6 +6,7 @@ declare global {
     first(): T;
 
     isEmpty(): boolean;
+    isNotEmpty(): boolean;
 
     /** Removes the first element of the array and returns itself */
     removeFirst(): Array<T>;
@@ -19,8 +20,8 @@ declare global {
     without(element: T): Array<T>;
   }
 
-  interface Number {
-    /** Useful when checking the length of an array (eg. 'if (array.length.is(1))' ) */
-    is(num: number): boolean;
+  interface String {
+    /** Checks for the ocurrences of 'string' globally and returns it */
+    matchesOf(string: string): RegExpMatchArray | [];
   }
 }
